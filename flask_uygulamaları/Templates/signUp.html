@@ -1,0 +1,27 @@
+{% extends "base_2.html" %}
+
+
+{% block content %}
+
+    <div class="jumbotron">
+        <h1>Welcome to the Sign Up page!</h1>
+        <p>Fill out the form.Notice we don't use any info from you!</p>
+
+        <form action="{{url_for('thank_you')}}">
+
+          <label for="first">First Name: </label>
+          <input type="text" name="first">
+
+          <label for="last">Last Name: </label>
+          <input type="text" name="last">
+
+          <input type="submit"  value="Submit Form">
+
+
+        </form>
+
+      
+    </div>
+
+
+{% endblock %}

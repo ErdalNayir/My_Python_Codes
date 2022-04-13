@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Merhaba</title>
+  </head>
+  <body>
+    <ul>
+      
+      {% for item in mylist %}
+      <li>{{item}}</li>
+      {% endfor %}
+    </ul>
+
+    {% if 'kömür' in puppies%}
+      <p>Buldum seni Kömür</p>
+    {%else%}
+      <p>Kömür kayıp !</p>
+    {%endif%}
+
+
+
+
+
+
+  </body>
+</html>
